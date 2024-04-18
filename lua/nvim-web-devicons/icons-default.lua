@@ -28,7 +28,7 @@ local cog_icon = ""
 
 local icons_by_file_extension = {
   ["php"] = magenta { icon = "", name = "Php" },
-  ["py"] = yellow { icon = "", name = "Py" },
+  ["py"] = yellow { icon = "", name = "Py" },
   ["go"] = cyan { icon = "", name = "Go" },
   ["lua"] = cyan { icon = "", name = "Lua" },
   ["js"] = yellow { icon = "", name = "Js" },
