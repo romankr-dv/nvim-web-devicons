@@ -1,19 +1,52 @@
-local purple = "#a074c4"
+local function cyan(opts)
+  opts.color = "#00ADD8"
+  opts.cterm_color = "74"
+  return opts
+end
 
-local icons_by_filename = {}
+local function magenta(opts)
+  opts.color = "#c678dd"
+  opts.cterm_color = "140"
+  return opts
+end
+
+local function yellow(opts)
+  opts.color = "#cbcb41"
+  opts.cterm_color = "185"
+  return opts
+end
+
+local function red(opts)
+  opts.color = "#ff6c6b"
+  opts.cterm_color = "196"
+  return opts
+end
+
+local tag_icon = "󰗀"
+local image_icon = ""
+local cog_icon = ""
 
 local icons_by_file_extension = {
-  ["php"] = { icon = "", color = purple, cterm_color = "140", name = "Php" },
+  ["php"] = magenta { icon = "", name = "Php" },
+  ["py"] = yellow { icon = "", name = "Py" },
+  ["go"] = cyan { icon = "", name = "Go" },
+  ["lua"] = cyan { icon = "", name = "Lua" },
+  ["js"] = yellow { icon = "", name = "Js" },
+  ["css"] = cyan { icon = "", name = "Css" },
+  ["html"] = red { icon = tag_icon, name = "Html" },
+  ["xml"] = yellow { icon = tag_icon, name = "Xml" },
+  ["png"] = magenta { icon = image_icon, name = "Png" },
+  ["jpg"] = magenta { icon = image_icon, name = "Jpg" },
+  ["webp"] = magenta { icon = image_icon, name = "Webp" },
+  ["ico"] = magenta { icon = image_icon, name = "Ico" },
+  ["makefile"] = red { icon = cog_icon, name = "Makefile" },
+  ["makefile.defs"] = red { icon = cog_icon, name = "Makefile" },
 }
 
-local icons_by_operating_system = {}
-local icons_by_desktop_environment = {}
-local icons_by_window_manager = {}
-
 return {
-  icons_by_filename = icons_by_filename,
+  icons_by_filename = {},
   icons_by_file_extension = icons_by_file_extension,
-  icons_by_operating_system = icons_by_operating_system,
-  icons_by_desktop_environment = icons_by_desktop_environment,
-  icons_by_window_manager = icons_by_window_manager,
+  icons_by_operating_system = {},
+  icons_by_desktop_environment = {},
+  icons_by_window_manager = {},
 }
