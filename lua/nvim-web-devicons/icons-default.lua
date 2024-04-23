@@ -33,7 +33,7 @@ local icons_by_file_extension = {
   ["lua"] = cyan { icon = "", name = "Lua" },
   ["js"] = yellow { icon = "", name = "Js" },
   ["css"] = cyan { icon = "", name = "Css" },
-  ["scss"] = magenta { icon = "", name = "Css" },
+  ["scss"] = magenta { icon = "", name = "Scss" },
   ["html"] = red { icon = tag_icon, name = "Html" },
   ["xml"] = yellow { icon = tag_icon, name = "Xml" },
   ["png"] = magenta { icon = image_icon, name = "Png" },
