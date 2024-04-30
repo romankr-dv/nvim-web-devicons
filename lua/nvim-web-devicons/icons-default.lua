@@ -36,7 +36,8 @@ local hash_icon = ""
 local icons_by_file_extension = {
   ["php"] = magenta { icon = "", name = "Php" },
   ["py"] = yellow { icon = "", name = "Py" },
-  ["go"] = cyan { icon = "", name = "Go" },
+  ["go"] = cyan { icon = "󰟓", name = "Go" },
+  ["md"] = magenta { icon = "󰽛", name = "Markdown" },
   ["lua"] = cyan { icon = "", name = "Lua" },
   ["js"] = yellow { icon = "", name = "Js" },
   ["ts"] = cyan { icon = "", name = "Ts" },
