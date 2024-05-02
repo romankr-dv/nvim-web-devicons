@@ -5,7 +5,7 @@ local icons, icons_by_filename, icons_by_file_extension, icons_by_operating_syst
 local icons_by_desktop_environment, icons_by_window_manager
 
 local default_icon = {
-  icon = "󰧮",
+  icon = "",
   color = "#6d8086",
   cterm_color = "66",
   name = "Default",
