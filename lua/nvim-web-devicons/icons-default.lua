@@ -1,4 +1,4 @@
-local function cyan(opts)
+local function blue(opts)
   opts.color = "#00ADD8"
   opts.cterm_color = "74"
   return opts
@@ -28,29 +28,24 @@ local function orange(opts)
   return opts
 end
 
-local tag_icon = "󰗀"
-local image_icon = ""
-local cog_icon = ""
-local hash_icon = ""
-
 local icons_by_file_extension = {
-  ["php"] = magenta { icon = "", name = "Php" },
-  ["py"] = yellow { icon = "", name = "Py" },
-  ["go"] = cyan { icon = "󰟓", name = "Go" },
-  ["md"] = magenta { icon = "󰽛", name = "Markdown" },
-  ["lua"] = cyan { icon = "", name = "Lua" },
-  ["js"] = yellow { icon = "", name = "Js" },
-  ["ts"] = cyan { icon = "", name = "Ts" },
-  ["css"] = cyan { icon = hash_icon, name = "Css" },
-  ["scss"] = red { icon = hash_icon, name = "Scss" },
-  ["html"] = red { icon = tag_icon, name = "Html" },
-  ["xml"] = orange { icon = tag_icon, name = "Xml" },
-  ["png"] = magenta { icon = image_icon, name = "Png" },
-  ["jpg"] = magenta { icon = image_icon, name = "Jpg" },
-  ["webp"] = magenta { icon = image_icon, name = "Webp" },
-  ["ico"] = magenta { icon = image_icon, name = "Ico" },
-  ["makefile"] = red { icon = cog_icon, name = "Makefile" },
-  ["makefile.defs"] = red { icon = cog_icon, name = "Makefile" },
+  ["php"] = magenta { icon = "php", name = "Php" },
+  ["py"] = yellow { icon = "py", name = "Py" },
+  ["go"] = blue { icon = "go", name = "Go" },
+  ["md"] = blue { icon = "md", name = "Markdown" },
+  ["lua"] = blue { icon = "lua", name = "Lua" },
+  ["js"] = yellow { icon = "js", name = "Js" },
+  ["ts"] = blue { icon = "ts", name = "Ts" },
+  ["css"] = blue { icon = "css", name = "Css" },
+  ["scss"] = red { icon = "scss", name = "Scss" },
+  ["html"] = red { icon = "html", name = "Html" },
+  ["xml"] = orange { icon = "xml", name = "Xml" },
+  ["png"] = magenta { icon = "png", name = "Png" },
+  ["jpg"] = magenta { icon = "jpg", name = "Jpg" },
+  ["webp"] = magenta { icon = "webp", name = "Webp" },
+  ["ico"] = magenta { icon = "ico", name = "Ico" },
+  ["makefile"] = red { icon = "make", name = "Makefile" },
+  ["makefile.defs"] = red { icon = "make", name = "Makefile" },
 }
 
 return {
